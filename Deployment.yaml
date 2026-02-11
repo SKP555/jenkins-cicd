@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: sample-app
-        image: 457271242919.dkr.ecr.ap-south-1.amazonaws.com/my-repo:latest
+        image: 772928963128.dkr.ecr.ap-south-1.amazonaws.com/sonu-jenkins:latest
         ports:
         - containerPort: 80
 ---
