@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         AWS_REGION = "ap-south-1"
-        ECR_REPO = "457271242919.dkr.ecr.ap-south-1.amazonaws.com/my-repo"
+        ECR_REPO = "772928963128.dkr.ecr.ap-south-1.amazonaws.com/sonu-jenkins"
         IMAGE_TAG = "latest"
     }
 
@@ -45,7 +45,7 @@ pipeline {
             steps {
                 script {
                     sh '''
-                    aws eks update-kubeconfig --name ak --region $AWS_REGION
+                    aws eks update-kubeconfig --name eks_jenkins --region $AWS_REGION
                     kubectl apply -f Deployment.yaml
                     '''
                 }
